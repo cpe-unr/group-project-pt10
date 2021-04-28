@@ -1,5 +1,7 @@
 /** @file */
 #include <iostream>
+#include "Mono8BitManger.h"
+#include "Manager.h"
 
 /**
  * \brief   The function bar.
@@ -26,6 +28,8 @@ void fn(){
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+	Wav *Manager = new Manager();
+	Wav *eightbitone = new Mono8BitManager();
+	eightbitone->print();
+   	return 0;
 }
