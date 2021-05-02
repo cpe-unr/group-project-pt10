@@ -1,18 +1,23 @@
 #ifndef WAV_H
 #define WAV_H
 
-#include <string>
-#include "WavHeader.h"
+#include "Header.h"
+#include "Metadata.h"
 
 class Wav {
 
-protected:
-	WavHeader wavheader;
-
+private:
+	Header header;
+	unsigned char* 8Buffer;
+    	short* 16Buffer;
+    	bool isStereo = false;
+    	bool is16Bit = false;
+    	Metadata metadata;
+    
 public:
-	virtual void(const std::string &fileName)=0
-	virtual void print() = 0;
+	Wav() = default;
+    	Wav(unsigned char* buffer, Header header, Metadata metadata);
+    	Wav(short* buffer, Header header, Metadata metadata);
 };
-
 
 #endif //WAV_H

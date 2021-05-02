@@ -1,5 +1,5 @@
-#ifndef WAVEHEADER_H
-#define WAVEHEADER_H
+#ifndef HEADER_H
+#define HEADER_H
 
 /*
 1 - 4	“RIFF”	Marks the file as a riff file. Characters are each 1 byte long.
@@ -17,7 +17,7 @@
 41-44	File size (data)	Size of the data section.
  */
 
-typedef struct wave_header {
+typedef struct Header {
 	
 	// RIFF Header
     	char riff_header[4]; // Contains "RIFF"
@@ -38,6 +38,6 @@ typedef struct wave_header {
     	char data_header[4]; // Contains "data"
     	int data_bytes; // Number of bytes in data. Number of samples * num_channels * sample byte size
     	// char bytes[]; // Remainder of wave file is bytes
-} wave_header;
+} Header;
 
-#endif //WAVEHEADER_H
+#endif //HEADER_H
