@@ -1,9 +1,19 @@
 #include "Mono8Bit.h"
+/**
+ * @brief default constructor for mono 8 bit files
+ *
+ */
 
 Mono8Bit::Mono8Bit(int)
 {
 
 }
+
+/**
+ * @brief function to capture data for mono 8 bit files
+ * 
+ * @param fileName - pointer of filename 
+ */
 
 void Mono8Bit::captureData(const std::string &fileName) {
     	std::ifstream file(fileName,std::ios::binary | std::ios::in);
@@ -16,21 +26,38 @@ void Mono8Bit::captureData(const std::string &fileName) {
     	}
 }
 
+/**
+ * @brief function to get  buffer for mono 8 bit files
+ * 
+ */
 unsigned char* Mono8Bit::getBuffer()
 {
     	return Mono8Bit::buffer;
 }
+
+/**
+ * @brief function to get header for mono 8 bit files
+ * 
+ */
 
 Header Mono8Bit::getHeader()
 {
     	return Mono8Bit::header;
 }
 
+/**
+ * @brief function to get metadata for mono 8 bit files
+ * 
+ */
+
 Metadata Mono8Bit::getMetadata()
 {
 	return Mono8Bit::metadata;
 }
-
+/**
+ * @brief function to print info for mono 8 bit files
+ * 
+ */
 void Mono8Bit::print(){
 	std::cout << header.riff_header << std::endl;
     	std::cout << header.wav_size << std::endl;

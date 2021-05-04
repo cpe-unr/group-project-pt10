@@ -1,8 +1,18 @@
 #include "Stereo8Bit.h"
+/**
+ * @brief default constructor for stereo 8 bit files
+ *
+ */
 
 Stereo8Bit::Stereo8Bit(int)
 {
 }
+
+/**
+ * @brief function to capture data for stereo 8 bit files
+ * 
+ * @param fileName - pointer of filename 
+ */
 
 void Stereo8Bit::captureData(const std::string &fileName) {
     std::ifstream file(fileName,std::ios::binary | std::ios::in);
@@ -14,20 +24,37 @@ void Stereo8Bit::captureData(const std::string &fileName) {
     }
 }
 
+/**
+ * @brief function to get  buffer for stereo 8 bit files
+ * 
+ */
+
 unsigned char* Stereo8Bit::getBuffer()
 {
     return Stereo8Bit::buffer;
 }
+/**
+ * @brief function to get header for stereo 8 bit files
+ * 
+ */
 
 Header Stereo8Bit::getHeader()
 {
     return Stereo8Bit::header;
 }
+/**
+ * @brief function to get metadata for stereo 8 bit files
+ * 
+ */
 
 Metadata Stereo8Bit::getMetadata()
 {
     return Stereo8Bit::metadata;
 }
+/**
+ * @brief function to print info for stereo 8 bit files
+ * 
+ */
 
 void Stereo8Bit::print(){
     std::cout << header.riff_header << std::endl;

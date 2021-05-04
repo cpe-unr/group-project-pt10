@@ -6,6 +6,10 @@
 
 class Mono16Bit : public AudioProcessor<short*>
 {
+	/**
+	 * @brief functions for mono 16 bit data handling, override from AudioProcessor.h
+	 * 
+	 */
 private:
     short* buffer;
 public:

@@ -1,8 +1,18 @@
 #include "Mono16Bit.h"
-
+/**
+ * @brief default constructor for mono 16 bit files
+ *
+ */
 Mono16Bit::Mono16Bit(int)
 {
 }
+
+
+/**
+ * @brief function to capture data for mono 16 bit files
+ * 
+ * @param fileName - pointer of filename 
+ */
 
 void Mono16Bit::captureData(const std::string &fileName) {
     std::ifstream file(fileName,std::ios::binary | std::ios::in);
@@ -15,10 +25,27 @@ void Mono16Bit::captureData(const std::string &fileName) {
 
 }
 
+
+/**
+ * @brief function to get  buffer for mono 16 bit files
+ * 
+ */
+
+
 short* Mono16Bit::getBuffer()
 {
     return Mono16Bit::buffer;
 }
+
+/**
+ * @brief function to get header for mono 16 bit files
+ * 
+ */
+
+/**
+ * @brief function to get metadata for mono 16 bit files
+ * 
+ */
 
 Header Mono16Bit::getHeader()
 {
@@ -29,6 +56,11 @@ Metadata Mono16Bit::getMetadata()
 {
     return Mono16Bit::metadata;
 }
+/**
+ * @brief function to print info for mono 16 bit files
+ * 
+ */
+
 
 void Mono16Bit::print(){
     std::cout << header.riff_header << std::endl;

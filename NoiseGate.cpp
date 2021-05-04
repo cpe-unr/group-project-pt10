@@ -10,11 +10,19 @@
 #include "NoiseGate.h"
 
 using namespace std;
-
+/**
+ * @brief function to set threshold
+ */
 NoiseGate::NoiseGate(float threshold)
 {
     NoiseGate::threshold = threshold / 100.;
 }
+/**
+ * @brief void processBuffer to noise gate file
+ * 
+ * @param buffer char pointer to buffer 
+ * @param bufferSize size of buffer to use in for loop
+ */
 
 void NoiseGate::processBuffer(unsigned char* buffer, int bufferSize)
 {

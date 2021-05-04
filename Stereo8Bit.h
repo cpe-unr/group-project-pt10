@@ -5,6 +5,10 @@
 
 class Stereo8Bit : public AudioProcessor<unsigned char*>
 {
+	/**
+	 * @brief functions for stero 8 bit data handling, override from AudioProcessor.h
+	 * 
+	 */
 private:
     unsigned char* buffer;
     

@@ -1,8 +1,17 @@
 #include "Stereo16Bit.h"
-
+/**
+ * @brief default constructor for stereo 16 bit files
+ *
+ */
 Stereo16Bit::Stereo16Bit(int)
 {
 }
+
+/**
+ * @brief function to capture data for stereo 16 bit files
+ * 
+ * @param fileName - pointer of filename 
+ */
 
 void Stereo16Bit::captureData(const std::string &fileName) {
     std::ifstream file(fileName,std::ios::binary | std::ios::in);
@@ -14,20 +23,41 @@ void Stereo16Bit::captureData(const std::string &fileName) {
     }
 }
 
+
+/**
+ * @brief function to get  buffer for stereo 16 bit files
+ * 
+ */
+
 short* Stereo16Bit::getBuffer()
 {
     return Stereo16Bit::buffer;
 }
+
+/**
+ * @brief function to get header for stereo 16 bit files
+ * 
+ */
 
 Header Stereo16Bit::getHeader()
 {
     return Stereo16Bit::header;
 }
 
+/**
+ * @brief function to get metadata for stereo 16 bit files
+ * 
+ */
+
 Metadata Stereo16Bit::getMetadata()
 {
     return Stereo16Bit::metadata;
 }
+
+/**
+ * @brief function to print info for stereo 16 bit files
+ * 
+ */
 
 void Stereo16Bit::print(){
     std::cout << header.riff_header << std::endl;

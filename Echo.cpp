@@ -16,6 +16,13 @@ Echo::Echo(int delay)
     Echo::delay = delay;
 }
 
+/**
+ * @brief void Echo to add echo effect
+ * 
+ * @param buffer char pointer to buffer 
+ * @param bufferSize size of buffer to use in for loop
+ */
+
 void Echo::processBuffer(unsigned char* buffer, int bufferSize)
 {
     uintmax_t sample[bufferSize]; //unsigned integral max bits.

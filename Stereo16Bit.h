@@ -5,6 +5,10 @@
 
 class Stereo16Bit : public AudioProcessor<short*>
 {
+	/**
+	 * @brief functions for stero 16 bit data handling, override from AudioProcessor.h
+	 * 
+	 */
 private:
     short* buffer;
 public:

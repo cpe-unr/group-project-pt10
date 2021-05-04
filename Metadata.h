@@ -5,6 +5,10 @@
 // For Wav Files
 typedef struct Metadata
 {
+    /**
+     * @brief variables to handle and store metadata from wavfile
+     * 
+     */
     // Meta header
     char list_header[4]; // Contains LIST
     int meta_size;

@@ -5,6 +5,10 @@
 
 class Mono8Bit : public AudioProcessor<unsigned char*>
 {
+	/**
+	 * @brief functions for mono 8 bit data handling, override from AudioProcessor.h
+	 * 
+	 */
 private:
     	unsigned char* buffer;
 public:

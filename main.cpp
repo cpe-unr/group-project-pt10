@@ -1,3 +1,5 @@
+/** @file **/
+
 #include <iostream>
 #include <vector>
 #include "Mono8Bit.h"

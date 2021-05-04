@@ -1,6 +1,13 @@
 #include "normal.h"
 #include "Wav.h"
 
+/**
+ * @brief void processBuffer to normalize file
+ * 
+ * @param buffer char pointer to buffer 
+ * @param bufferSize size of buffer to use in for loop
+ */
+
 
 void Normal::processBuffer(unsigned char* buffer, int bufferSize){
 

@@ -6,6 +6,10 @@
 
 class Preprocessor : public AudioProcessor<int>
 {
+	/**
+	 * @brief contains virtual and other functions to use in metadata extraction
+	 * 
+	 */
 private:
     	Header header;
 public:

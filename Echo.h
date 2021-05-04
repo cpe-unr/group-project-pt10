@@ -11,6 +11,14 @@
 
 #include "Processor.h"
 
+/**
+ * 
+ * @param delay for wavfile echo processing
+ * Echo default is default constructor
+ * function procebuffer used to add echo effect
+ * 
+ */
+
 class Echo : public Processor
 {
 	int delay;

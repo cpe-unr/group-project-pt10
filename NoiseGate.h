@@ -13,6 +13,12 @@
 
 class NoiseGate : public Processor
 {
+/**
+ * NoiseGate default constructor and paramterized consturctor
+ * @param buffer for wavfile  processing
+ * @param bufferSize size of wavfile for normalization function
+ * 
+ */
     	float threshold;
 public:
 	NoiseGate() = default;
