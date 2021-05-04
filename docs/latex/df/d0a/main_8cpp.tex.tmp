@@ -1,8 +1,13 @@
 \hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
 \label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
 {\ttfamily \#include $<$iostream$>$}\newline
-{\ttfamily \#include \char`\"{}Mono8\+Bit\+Manger.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Mono8\+Bit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mono16\+Bit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Stereo8\+Bit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Stereo16\+Bit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Preprocessor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wav.\+h\char`\"{}}\newline
 Include dependency graph for main.\+cpp\+:
 % FIG 0
 \subsection*{Functions}
@@ -47,11 +52,6 @@ The error return code of the function.
 \begin{DoxyRetVals}{Return values}
 {\em E\+R\+R\+\_\+\+S\+U\+C\+C\+E\+SS} & The function is successfully executed \\
 \hline
-{\em E\+R\+R\+\_\+\+F\+A\+I\+L\+U\+RE} & An error occurred This is the main file \\
+{\em E\+R\+R\+\_\+\+F\+A\+I\+L\+U\+RE} & An error occurred \\
 \hline
 \end{DoxyRetVals}
-
-\begin{DoxyParams}{Parameters}
-{\em hours} & -\/ example \\
-\hline
-\end{DoxyParams}

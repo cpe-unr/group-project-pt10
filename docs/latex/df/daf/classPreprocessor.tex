@@ -1,0 +1,115 @@
+\hypertarget{classPreprocessor}{}\section{Preprocessor Class Reference}
+\label{classPreprocessor}\index{Preprocessor@{Preprocessor}}
+
+
+Inheritance diagram for Preprocessor\+:
+% FIG 0
+
+
+Collaboration diagram for Preprocessor\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPreprocessor_a9dcbd261afc0ae54359e586cca09541c}{Preprocessor} (int)
+\item 
+void \hyperlink{classPreprocessor_a0c44994af64474c46f442e9dcaabac05}{capture\+Data} (const std\+::string \&file\+Name) override
+\item 
+int \hyperlink{classPreprocessor_a6ec2e7b2c9341cf57db47de4cc7e9d84}{get\+Buffer} () override
+\item 
+\hyperlink{structHeader}{Header} \hyperlink{classPreprocessor_a4d5de3e54f8bf6a5b160665dff992337}{get\+Header} () override
+\item 
+\hyperlink{structMetadata}{Metadata} \hyperlink{classPreprocessor_aa5520c26dae59270ef25d303d369ce4c}{get\+Metadata} () override
+\item 
+bool \hyperlink{classPreprocessor_a5ddd30e7e8efc9d2ebdbfb355fb79c20}{check\+If\+Stereo} ()
+\item 
+int \hyperlink{classPreprocessor_ad996082402e7c64d6e81ba06719a7b77}{process\+Bitrate} ()
+\item 
+void \hyperlink{classPreprocessor_a7b4264680c47a71a0ae4f735501f3acf}{print} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPreprocessor_a9dcbd261afc0ae54359e586cca09541c}\label{classPreprocessor_a9dcbd261afc0ae54359e586cca09541c}} 
+\index{Preprocessor@{Preprocessor}!Preprocessor@{Preprocessor}}
+\index{Preprocessor@{Preprocessor}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{Preprocessor()}{Preprocessor()}}
+{\footnotesize\ttfamily Preprocessor\+::\+Preprocessor (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+constructor take input 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPreprocessor_a0c44994af64474c46f442e9dcaabac05}\label{classPreprocessor_a0c44994af64474c46f442e9dcaabac05}} 
+\index{Preprocessor@{Preprocessor}!capture\+Data@{capture\+Data}}
+\index{capture\+Data@{capture\+Data}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{capture\+Data()}{captureData()}}
+{\footnotesize\ttfamily void Preprocessor\+::capture\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+function to capture\+Data 
+\begin{DoxyParams}{Parameters}
+{\em const} & filename pointer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAudioProcessor_a0d6d6ef552e671405150d2cfbd4095c5}{Audio\+Processor$<$ int $>$}.
+
+\mbox{\Hypertarget{classPreprocessor_a5ddd30e7e8efc9d2ebdbfb355fb79c20}\label{classPreprocessor_a5ddd30e7e8efc9d2ebdbfb355fb79c20}} 
+\index{Preprocessor@{Preprocessor}!check\+If\+Stereo@{check\+If\+Stereo}}
+\index{check\+If\+Stereo@{check\+If\+Stereo}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{check\+If\+Stereo()}{checkIfStereo()}}
+{\footnotesize\ttfamily bool Preprocessor\+::check\+If\+Stereo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to ccheck if Stereo \mbox{\Hypertarget{classPreprocessor_a6ec2e7b2c9341cf57db47de4cc7e9d84}\label{classPreprocessor_a6ec2e7b2c9341cf57db47de4cc7e9d84}} 
+\index{Preprocessor@{Preprocessor}!get\+Buffer@{get\+Buffer}}
+\index{get\+Buffer@{get\+Buffer}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{get\+Buffer()}{getBuffer()}}
+{\footnotesize\ttfamily int Preprocessor\+::get\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+function for getting Buffer 
+
+Implements \hyperlink{classAudioProcessor}{Audio\+Processor$<$ int $>$}.
+
+\mbox{\Hypertarget{classPreprocessor_a4d5de3e54f8bf6a5b160665dff992337}\label{classPreprocessor_a4d5de3e54f8bf6a5b160665dff992337}} 
+\index{Preprocessor@{Preprocessor}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{get\+Header()}{getHeader()}}
+{\footnotesize\ttfamily \hyperlink{structHeader}{Header} Preprocessor\+::get\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+function to get header 
+
+Implements \hyperlink{classAudioProcessor}{Audio\+Processor$<$ int $>$}.
+
+\mbox{\Hypertarget{classPreprocessor_aa5520c26dae59270ef25d303d369ce4c}\label{classPreprocessor_aa5520c26dae59270ef25d303d369ce4c}} 
+\index{Preprocessor@{Preprocessor}!get\+Metadata@{get\+Metadata}}
+\index{get\+Metadata@{get\+Metadata}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{get\+Metadata()}{getMetadata()}}
+{\footnotesize\ttfamily \hyperlink{structMetadata}{Metadata} Preprocessor\+::get\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+function to get \hyperlink{structMetadata}{Metadata} 
+
+Implements \hyperlink{classAudioProcessor}{Audio\+Processor$<$ int $>$}.
+
+\mbox{\Hypertarget{classPreprocessor_a7b4264680c47a71a0ae4f735501f3acf}\label{classPreprocessor_a7b4264680c47a71a0ae4f735501f3acf}} 
+\index{Preprocessor@{Preprocessor}!print@{print}}
+\index{print@{print}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Preprocessor\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+function to print info 
+
+Implements \hyperlink{classAudioProcessor}{Audio\+Processor$<$ int $>$}.
+
+\mbox{\Hypertarget{classPreprocessor_ad996082402e7c64d6e81ba06719a7b77}\label{classPreprocessor_ad996082402e7c64d6e81ba06719a7b77}} 
+\index{Preprocessor@{Preprocessor}!process\+Bitrate@{process\+Bitrate}}
+\index{process\+Bitrate@{process\+Bitrate}!Preprocessor@{Preprocessor}}
+\subsubsection{\texorpdfstring{process\+Bitrate()}{processBitrate()}}
+{\footnotesize\ttfamily int Preprocessor\+::process\+Bitrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to processs Bitrate 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Preprocessor.\+h\item 
+Preprocessor.\+cpp\end{DoxyCompactItemize}

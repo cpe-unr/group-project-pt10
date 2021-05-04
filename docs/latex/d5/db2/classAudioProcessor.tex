@@ -1,0 +1,68 @@
+\hypertarget{classAudioProcessor}{}\section{Audio\+Processor$<$ T $>$ Class Template Reference}
+\label{classAudioProcessor}\index{Audio\+Processor$<$ T $>$@{Audio\+Processor$<$ T $>$}}
+
+
+Collaboration diagram for Audio\+Processor$<$ T $>$\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudioProcessor_a0d6d6ef552e671405150d2cfbd4095c5}{capture\+Data} (const std\+::string \&file\+Name)=0
+\begin{DoxyCompactList}\small\item\em Virtual Functions to be overided by each subtype processor class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAudioProcessor_af5656baf5d5c7d1b4ff07ce8d31f65a8}\label{classAudioProcessor_af5656baf5d5c7d1b4ff07ce8d31f65a8}} 
+virtual T {\bfseries get\+Buffer} ()=0
+\item 
+\mbox{\Hypertarget{classAudioProcessor_a308cb04c6cbe75a29bcea27a4505fb6b}\label{classAudioProcessor_a308cb04c6cbe75a29bcea27a4505fb6b}} 
+virtual \hyperlink{structHeader}{Header} {\bfseries get\+Header} ()=0
+\item 
+\mbox{\Hypertarget{classAudioProcessor_a944d36fd87e848a52ae59cecd2cfa66e}\label{classAudioProcessor_a944d36fd87e848a52ae59cecd2cfa66e}} 
+virtual \hyperlink{structMetadata}{Metadata} {\bfseries get\+Metadata} ()=0
+\item 
+\mbox{\Hypertarget{classAudioProcessor_ae83737710cbf3e05bdbae7efbc3044ea}\label{classAudioProcessor_ae83737710cbf3e05bdbae7efbc3044ea}} 
+virtual void {\bfseries print} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAudioProcessor_ae794bfb68c80671f7fceefb9cb4b4002}\label{classAudioProcessor_ae794bfb68c80671f7fceefb9cb4b4002}} 
+\hyperlink{structHeader}{Header} {\bfseries header}
+\item 
+\mbox{\Hypertarget{classAudioProcessor_a14643b98d14390402a0315b6d02a749d}\label{classAudioProcessor_a14643b98d14390402a0315b6d02a749d}} 
+\hyperlink{structMetadata}{Metadata} {\bfseries metadata}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAudioProcessor_a0d6d6ef552e671405150d2cfbd4095c5}\label{classAudioProcessor_a0d6d6ef552e671405150d2cfbd4095c5}} 
+\index{Audio\+Processor@{Audio\+Processor}!capture\+Data@{capture\+Data}}
+\index{capture\+Data@{capture\+Data}!Audio\+Processor@{Audio\+Processor}}
+\subsubsection{\texorpdfstring{capture\+Data()}{captureData()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual void \hyperlink{classAudioProcessor}{Audio\+Processor}$<$ T $>$\+::capture\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual Functions to be overided by each subtype processor class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capture\+Data} & for metadata extraction \\
+\hline
+{\em get\+Buffer} & acess auido file buffer \\
+\hline
+{\em get\+Header} & get header of wavfile \\
+\hline
+{\em get\+Metadata} & gets metadata from file \\
+\hline
+{\em print} & print info \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMono16Bit_adc338eb2b8f56cf676f55900e769e785}{Mono16\+Bit}, \hyperlink{classPreprocessor_a0c44994af64474c46f442e9dcaabac05}{Preprocessor}, \hyperlink{classStereo8Bit_aabe25fe6e9bef1ddb8e1b2d4f38e5232}{Stereo8\+Bit}, \hyperlink{classMono8Bit_a87631b77782bb49ae04b24560d6bcc1f}{Mono8\+Bit}, and \hyperlink{classStereo16Bit_a74c0ba8999456fab1de7e035e2225fa9}{Stereo16\+Bit}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Audio\+Processor.\+h\end{DoxyCompactItemize}

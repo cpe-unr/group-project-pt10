@@ -1,0 +1,17 @@
+{\bfseries Group Members \& Responsibilities \+:}
+
+Jefrin Jojan -\/ Processing Files including normalization, noise gate and echo
+
+Jose A. Cano Perez -\/ File IO and \hyperlink{structMetadata}{Metadata} extraction
+
+Ian Pettersen -\/ Documentation(\+U\+M\+L Diagram and Doxygen)
+
+{\bfseries Design}
+
+
+
+The program begins with the preprocessor class and then depending on the file bit size and mono versus stereo switches between the subclasses to read in the needed metadata. Each class inherits the header, buffer and metadata from the preprocessor class.\+Then the user has the option to choose which modifications they want to make to the audio files. The \hyperlink{AudioProcessor_8h_source}{Audio\+Processor.\+h} file acts as a template with functions that are overridden and used by each of the subtype processor classes which are called \hyperlink{classNormal}{Normal}, \hyperlink{classNoiseGate}{Noise\+Gate} and \hyperlink{classEcho}{Echo}. Each of these 3 has an inheritance relationship with \hyperlink{classAudioProcessor}{Audio\+Processor} as well.
+
+{\bfseries Challenges}
+
+One major challenge we encountered was handling the file IO portion of the code. To handle the differences between stereo and mono alongside different bit sizes proved daunting. We used recasting and templates to help overcome this problem. We also faced issues with correctly making use of doxygen as it was not working in V\+SC and github pages as restricted. Thus we installed doxygen on Linux which was easier to use. 

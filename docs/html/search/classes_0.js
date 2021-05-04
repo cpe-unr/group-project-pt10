@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['manager',['Manager',['../dd/dcd/classManager.html',1,'']]],
-  ['mono8bitmanager',['Mono8BitManager',['../dc/dc5/classMono8BitManager.html',1,'']]]
+  ['audioprocessor',['AudioProcessor',['../d5/db2/classAudioProcessor.html',1,'']]],
+  ['audioprocessor_3c_20int_20_3e',['AudioProcessor&lt; int &gt;',['../d5/db2/classAudioProcessor.html',1,'']]],
+  ['audioprocessor_3c_20short_20_2a_3e',['AudioProcessor&lt; short *&gt;',['../d5/db2/classAudioProcessor.html',1,'']]],
+  ['audioprocessor_3c_20unsigned_20char_20_2a_3e',['AudioProcessor&lt; unsigned char *&gt;',['../d5/db2/classAudioProcessor.html',1,'']]]
 ];
