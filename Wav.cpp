@@ -4,10 +4,10 @@ Wav::Wav(unsigned char* buffer, Header header, Metadata metadata)
 {
 	if (header.num_channels == 2)
     	{		
-        	Wav::isStereo = true;
+        	Wav::stereo = true;
     	}
     	Wav::header = header;
-    	Wav::8Buffer = buffer;
+    	Wav::eightBuffer = buffer;
     	Wav::metadata = metadata;       
 }
 
@@ -15,10 +15,10 @@ Wav::Wav(short* buffer, Header header, Metadata metadata)
 {
     	if (header.num_channels == 2)
     	{
-        	Wav::isStereo = true;
+        	Wav::stereo = true;
     	}
-   	Wav::is16Bit = true;
+   	Wav::sixteenBit = true;
     	Wav::header = header;
-    	Wav::16Buffer = buffer;
+    	Wav::sixteenBuffer = buffer;
     	Wav::metadata = metadata;
 }

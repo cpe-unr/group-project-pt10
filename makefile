@@ -1,10 +1,10 @@
-output: Main.o Preprocessor.o Mono8Bit.o Mono16Bit.o Stereo8Bit.o Stereo16Bit.o
-	g++ -std=c++11 -o output Main.o Preprocessor.o Mono8Bit.o
+output: main.o Preprocessor.o Mono8Bit.o Mono16Bit.o Stereo8Bit.o Stereo16Bit.o Wav.o
+	g++ -std=c++11 -o output main.o Preprocessor.o Mono8Bit.o Wav.o Mono16Bit.o Stereo8Bit.o Stereo16Bit.o
 
 Wav.o: Wav.cpp Wav.h Header.h
-	g++ -std=c++11 -c Wav.cpp Header.h
+	g++ -std=c++11 -c Wav.cpp
 
-Main.o: main.cpp Preprocessor.h
+main.o: main.cpp Mono8Bit.h Preprocessor.h
 	g++ -std=c++11 -c main.cpp
 
 Preprocessor.o: Preprocessor.cpp Preprocessor.h AudioProcessor.h  Header.h
@@ -25,11 +25,11 @@ Stereo16Bit.o: Stereo16Bit.cpp Stereo16Bit.h AudioProcessor.h
 Echo.o: Echo.cpp Echo.h
 	g++ -std=c++11 -c Echo.cpp
 
-NoiseGate.0: NoiseGate.cpp NoiseGate.h
+NoiseGate.o: NoiseGate.cpp NoiseGate.h
 	g++ -std=c++11 -c NoiseGate.cpp
 
-Normalization.o: Normalization.cpp Normalization.h
-	g++ -std=c++11 -c Normalization.cpp
+Normal.o: Normal.cpp Normal.h
+	g++ -std=c++11 -c Normal.cpp
 
 clean:
 	rm output *.o

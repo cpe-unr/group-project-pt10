@@ -10,8 +10,8 @@ private:
 	Header header;
 	unsigned char* eightBuffer;
     	short* sixteenBuffer;
-    	bool isStereo = false;
-    	bool is16Bit = false;
+    	bool stereo = false;
+    	bool sixteenBit = false;
     	Metadata metadata;
     
 public:

@@ -24,7 +24,7 @@ class Echo : public Processor
 	int delay;
 public:
 	Echo() = default;
-	Echo(int delay);
+	Echo(int);
     	void processBuffer(unsigned char* buffer, int bufferSize) override;
 };
 
