@@ -8,8 +8,8 @@ class Wav {
 
 private:
 	Header header;
-	unsigned char* 8Buffer;
-    	short* 16Buffer;
+	unsigned char* eightBuffer;
+    	short* sixteenBuffer;
     	bool isStereo = false;
     	bool is16Bit = false;
     	Metadata metadata;

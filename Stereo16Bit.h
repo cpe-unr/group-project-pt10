@@ -9,7 +9,7 @@ private:
     short* buffer;
 public:
 	Stereo16Bit() = default;
-    	Stereo16Bit(/* args */);
+    	Stereo16Bit(int);
     	void captureData(const std::string &fileName) override;
     	short* getBuffer() override;
     	Header getHeader() override;

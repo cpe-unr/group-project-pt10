@@ -10,7 +10,7 @@ private:
     	Header header;
 public:
 	Preprocessor() = default;
-    	Preprocessor(/* args */);
+    	Preprocessor(int);
     	void captureData(const std::string &fileName) override;
 	int getBuffer() override;
     	Header getHeader() override;

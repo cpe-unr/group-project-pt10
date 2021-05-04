@@ -1,5 +1,5 @@
 #ifndef AUDIOPROCESSOR_H
-#define AUDIPROCESSOR_H
+#define AUDIOPROCESSOR_H
 
 #include "Header.h"
 #include "Metadata.h"

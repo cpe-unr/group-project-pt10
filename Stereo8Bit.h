@@ -10,7 +10,7 @@ private:
     
 public:
 	Stereo8Bit() = default;
-    	Stereo8Bit(/* args */);
+    	Stereo8Bit(int);
     	void captureData(const std::string &fileName) override;
     	unsigned char* getBuffer() override;
     	Header getHeader() override;

@@ -1,6 +1,6 @@
 #include "Preprocessor.h"
 
-Preprocessor::Preprocessor(/* arguments */)
+Preprocessor::Preprocessor(int)
 {
 
 }

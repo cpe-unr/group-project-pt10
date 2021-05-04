@@ -35,10 +35,10 @@ void fn(){
 
 int main() {
 	Preprocessor *preprocessor = new Preprocessor();
-    	AudioProcessor<unsigned char*> *8Bitone = new Mono8Bit();
-    	AudioProcessor<short*> *16Bitone = new Mono16Bit();
-    	AudioProcessor<unsigned char*> *8Bitwo = new Stereo8Bit();
-    	AudioProcessor<short*> *16Bitwo = new Stereo16Bit();
+    	AudioProcessor<unsigned char*> *eightBitone = new Mono8Bit();
+    	AudioProcessor<short*> *sixteenBitone = new Mono16Bit();
+    	AudioProcessor<unsigned char*> *eightBitwo = new Stereo8Bit();
+    	AudioProcessor<short*> *sixteenBitwo = new Stereo16Bit();
     	vector<Wav*> songs;
     	preprocessor->captureData("yes-8-bit-stereo.wav");
     	int bitRate = preprocessor->processBitrate();
@@ -47,29 +47,29 @@ int main() {
     	case 1:
        		if (preprocessor->checkIfStereo())
         	{
-            		8Bitwo->captureData("yes-8-bit-stereo.wav");
-            		8Bitwo->print();
-	            	songs.push_back(new Wav(8Bitwo->getBuffer(),8Bitwo->getHeader(),8Bitwo->getMetadata()));
+            		eightBitwo->captureData("yes-8-bit-stereo.wav");
+            		eightBitwo->print();
+	            	songs.push_back(new Wav(eightBitwo->getBuffer(),eightBitwo->getHeader(),eightBitwo->getMetadata()));
         	}
         	else
         	{
-        	    	8Bitone->captureData("yes-8-bit-mono.wav");
-	            	8Bitone->print();
-        	    	songs.push_back(new Wav(8Bitone->getBuffer(),8Bitone->getHeader(),8Bitone->getMetadata()));
+        	    	eightBitone->captureData("yes-8-bit-mono.wav");
+	            	eightBitone->print();
+        	    	songs.push_back(new Wav(eightBitone->getBuffer(),eightBitone->getHeader(),eightBitone->getMetadata()));
         	}      
         break;
     	case 2:
         	if (preprocessor->checkIfStereo())
         	{
-	            	16Bitone->captureData("yes-16-bit-stereo.wav");
-        	    	16Bitone->print();
-            		songs.push_back(new Wav(16Bitwo->getBuffer(),16Bitwo->getHeader(),16Bitwo->getMetadata()));
+	            	sixteenBitone->captureData("yes-16-bit-stereo.wav");
+        	    	sixteenBitone->print();
+            		songs.push_back(new Wav(sixteenBitwo->getBuffer(),sixteenBitwo->getHeader(),sixteenBitwo->getMetadata()));
         	}
         	else
         	{
-	            	16Bitwo->captureData("yes-16-bit-mono.wav");
-        	    	16Bitwo->print();
-            		songs.push_back(new Wav(16Bitone->getBuffer(),16Bitone->getHeader(),16Bitone->getMetadata()));
+	            	sixteenBitwo->captureData("yes-16-bit-mono.wav");
+        	    	sixteenBitwo->print();
+            		songs.push_back(new Wav(sixteenBitone->getBuffer(),sixteenBitone->getHeader(),sixteenBitone->getMetadata()));
         	}
         break;
     default:

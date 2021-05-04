@@ -1,12 +1,12 @@
 #include "Mono8Bit.h"
 
-Mono8Bit::Mono8Bit(/* arguments */)
+Mono8Bit::Mono8Bit(int)
 {
 
 }
 
 void Mono8Bit::captureData(const std::string &fileName) {
-    	std::ifstream file(fileName,std::binary | std::in);
+    	std::ifstream file(fileName,std::ios::binary | std::ios::in);
     	char* file_content;
     	if(file.is_open()){
         	file.read((char*)&header, sizeof(Header));
@@ -26,7 +26,7 @@ Header Mono8Bit::getHeader()
     	return Mono8Bit::header;
 }
 
-MetaData Mono8Bit::getMetadata()
+Metadata Mono8Bit::getMetadata()
 {
 	return Mono8Bit::metadata;
 }

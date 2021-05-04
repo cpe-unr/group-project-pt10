@@ -9,7 +9,7 @@ private:
     	unsigned char* buffer;
 public:
 	Mono8Bit() = default;
-    	Mono8Bit(/* args */);
+    	Mono8Bit(int);
     	void captureData(const std::string &fileName) override;
     	unsigned char* getBuffer() override;
 	Header getHeader() override;

@@ -1,6 +1,6 @@
 #include "Stereo8Bit.h"
 
-Stereo8Bit::Stereo8Bit(/* args */)
+Stereo8Bit::Stereo8Bit(int)
 {
 }
 

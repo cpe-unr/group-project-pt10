@@ -1,6 +1,6 @@
 #include "Stereo16Bit.h"
 
-Stereo16Bit::Stereo16Bit(/* args */)
+Stereo16Bit::Stereo16Bit(int)
 {
 }
 
@@ -24,7 +24,7 @@ Header Stereo16Bit::getHeader()
     return Stereo16Bit::header;
 }
 
-Metadata Stereo16Bit::getMetaData()
+Metadata Stereo16Bit::getMetadata()
 {
     return Stereo16Bit::metadata;
 }

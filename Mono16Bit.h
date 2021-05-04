@@ -10,7 +10,7 @@ private:
     short* buffer;
 public:
 	Mono16Bit() = default;
-    	Mono16Bit(/* args */);
+    	Mono16Bit(int);
 	void captureData(const std::string &fileName) override;
     	short* getBuffer() override;
     	Header getHeader() override;

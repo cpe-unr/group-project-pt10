@@ -1,6 +1,6 @@
 #include "Mono16Bit.h"
 
-Mono16Bit::Mono16Bit(/* args */)
+Mono16Bit::Mono16Bit(int)
 {
 }
 
@@ -10,7 +10,7 @@ void Mono16Bit::captureData(const std::string &fileName) {
         file.read((char*)&header, sizeof(Header));
         Mono16Bit::buffer = new short[header.data_bytes];
         file.read((char*)buffer, header.data_bytes);
-        file.read((char*)&metadata, sizeof(MetaData));
+        file.read((char*)&metadata, sizeof(Metadata));
     }
 
 }
